@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --main-bg: #fff;
+  --main-bg: #ffffff;
   --primary-text-color: #2c2c2c;
   --secondary-text-color: #828893;
 
@@ -56,7 +56,7 @@ html {
 body {
     width: var(--main-width);
     margin: 0 auto;
-    font-size: var(--font-size-0);
+    font-size: var(--default-font-size);
     line-height: var(--default-line-height);
     color: var(--primary-text-color);
     background: var(--main-bg);
@@ -139,5 +139,23 @@ ul {
         --main-bg: #121212;
         --primary-text-color: rgba(255, 255, 255, 0.87);
         --secondary-text-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Smaller devices till tablet */
+@media only screen and (max-width: 600px) {
+    :root {
+    }
+}
+
+/* Devices with viewport from tablet till laptop */
+@media only screen and (min-width: 768px) {
+    :root {
+    }
+}
+
+/* Devices from smaller laptop viewport and up */
+@media only screen and (min-width: 1200px) {
+    :root {
     }
 }
