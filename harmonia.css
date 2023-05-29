@@ -41,6 +41,9 @@
 
   --default-font: Tahoma, sans-serif;
   --poppins-font: 'Poppins', sans-serif;
+
+  --elevation-raised-top: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --elevation-floating: 0 0 8px rgba(0, 0, 0, 0.10);
 }
 
 * {
@@ -59,6 +62,7 @@ body {
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
     background: var(--main-bg);
+    padding: 0 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,6 +106,30 @@ h6 {
 
 .text-small {
     font-size: var(--font-size-small);
+}
+
+.col-12 {
+    grid-column: span 12 / span 12;
+}
+
+.col-6 {
+    grid-column: span 6 / span 6;
+}
+
+.col-4 {
+    grid-column: span 4 / span 4;
+}
+
+.col-3 {
+    grid-column: span 3 / span 3;
+}
+
+.col-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-1 {
+    grid-column: span 1 / span 1;
 }
 
 @media (prefers-color-scheme: dark) {
