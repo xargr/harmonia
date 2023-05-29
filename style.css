@@ -192,12 +192,8 @@ ul {
 
 /* Devices with viewport from tablet till laptop */
 @media only screen and (min-width: 768px) {
-    :root {
-    }
 }
 
 /* Devices from smaller laptop viewport and up */
 @media only screen and (min-width: 1200px) {
-    :root {
-    }
 }
