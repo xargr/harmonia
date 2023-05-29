@@ -10,126 +10,143 @@
     <link >
 </head>
 <body>
-    <div class="section">
-        <h1>Harmonia design system</h1> by <a href="https://twitter.com/xargr" target="_blank">@xargr</a>
-    </div>
-    <div class="section">
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-    </div>
-    <div class="section">
-        <h2>Font families</h2>
-        <p>Font family Poppins ( used only in headings or CTA )</p>
-        <code>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); <br /><br />
-            font-family: 'Poppins', sans-serif;
-        </code>
-        <p>Font family Tahoma ( it's web safe - used everywhere as a default font family and required in text heavy areas )</p>
-    </div>
-    <div class="section">
-        <h2>Font size</h2>
-        <p>primary font size 86px</p>
-        <p class="text-medium">medium font size 0.8rem</p>
-        <p class="text-small">small font size 0.64rem</p>
-        <p>on mobile minumun 16px</p>
-    </div>
-    <div class="section">
-        <h2>Font style</h2>
-        <p>only normal</p>
-    </div>
-    <div class="section">
-        <h2>Font weight</h2>
-        <p>normal or bold</p>
-    </div>
-    <div class="section">
-        <h2>Font color</h2>
-        <p>primary neutral color #2c2c2c</p>
-        <p class="secondary-color">secondary neutral color #828893</p>
-    </div>
-    <div class="section">
-        <h2>Font scale</h2>
-        <p>1.25 - Major third see <a class="underline" href="https://typescale.com/" target="_blank">typescale.com</a></p>
-    </div>
-    <div class="section">
-        <h2>Spacing</h2>
-        <p>followed the <a class="underline" href="https://www.google.com/search?q=8+point+system" target="_blank">8 point system</a></p>
-        <p>
-            css variables <br />
+    <div class="grid">
+        <div class="section col-12">
+            <h1>Harmonia design system</h1> by <a href="https://twitter.com/xargr" target="_blank">@xargr</a>
+        </div>
+        <div class="section">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        <div class="section col-12">
+            <h2>Font families</h2>
+            <p>Font family Poppins ( used only in headings or CTA )</p>
             <code>
-                --space-1: 4px; <br />
-                --space-2: 8px; <br />
-                --space-3: 16px; <br />
-                --space-4: 24px; <br />
-                --space-5: 32px; <br />
-                --space-6: 40px;
+                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); <br /><br />
+                font-family: 'Poppins', sans-serif;
             </code>
-        </p>
-        <p>for internal distances eg. label and field, we can then only use 4 point system</p>
-    </div>
-    <div class="section">
-        <h2>Color ratio</h2>
-        <p>followed the <a class="underline" href="https://www.google.com/search?q=60+30+10+color+rule+design+system" target="_blank">60-30-10 color rule</a></p>
-    </div>
-    <div class="section">
-        <h2>Color tints & shades</h2>
-        <p>generated from <a class="underline" href="https://maketintsandshades.com/" target="_blank">maketintsandshades.com</a></p>
-        <div style="display: flex; margin-bottom: 16px;">
-            <div style="height: 100px; width: 100px; background-color: #fae5d3;">orange-100</div>
-            <div style="height: 100px; width: 100px; background-color: #f5cba7;">orange-200</div>
-            <div style="height: 100px; width: 100px; background-color: #efb07b;">orange-300</div>
-            <div style="height: 100px; width: 100px; background-color: #ea964f;">orange-400</div>
-            <div style="height: 100px; width: 100px; background-color: #e57c23;">orange-500</div>
-            <div style="height: 100px; width: 100px; background-color: #b7631c;">orange-600</div>
-            <div style="height: 100px; width: 100px; background-color: #894a15;">orange-700</div>
-            <div style="height: 100px; width: 100px; background-color: #5c320e;">orange-800</div>
-            <div style="height: 100px; width: 100px; background-color: #2e1907;">orange-900</div>
+            <p>Font family Tahoma ( it's web safe - used everywhere as a default font family and required in text heavy areas )</p>
         </div>
-        <div style="display: flex;">
-            <div style="height: 100px; width: 100px; background-color: #d9ddff">blue-100</div>
-            <div style="height: 100px; width: 100px; background-color: #b4bbff;">blue-200</div>
-            <div style="height: 100px; width: 100px; background-color: #8e9aff;">blue-300</div>
-            <div style="height: 100px; width: 100px; background-color: #6978ff;">blue-400</div>
-            <div style="height: 100px; width: 100px; background-color: #4356FF;">blue-500</div>
-            <div style="height: 100px; width: 100px; background-color: #3645cc;">blue-600</div>
-            <div style="height: 100px; width: 100px; background-color: #283499;">blue-700</div>
-            <div style="height: 100px; width: 100px; background-color: #1b2266;">blue-800</div>
-            <div style="height: 100px; width: 100px; background-color: #0d1133;">blue-900</div>
+        <div class="section col-12">
+            <h2>Font size</h2>
+            <p>primary font size 86px</p>
+            <p class="text-medium">medium font size 0.8rem</p>
+            <p class="text-small">small font size 0.64rem</p>
+            <p>on mobile minumun 16px</p>
         </div>
-    </div>
-    <div class="section">
-        <h2>Text alignment</h2>
-        <p>Use left alignment everywhere</p>
-        <p>Use center alignment for text maximun 3 lines</p>
-    </div>
-    <div class="section">
-        <h2>Web accessibility</h2>
-        <p>no more than 60 characters per line for desktop and 30-40 for mobile</p>
-        <p>group related items together and give enough space to differentiate them</p>
-    </div>
-    <div class="section">
-        <h2>Layout</h2>
-        <p>12 grid for desktop, 8 grid for tablet and 4 grid for mobile</p>
-        <p>maximun width 1280px</p>
-        <p>16px margin left and right</p>
-        <p>32px gutter for each grid side and 16px for mobile</p>
-        <p>grid width fluid</p>
-    </div>
-    <div class="section">
-        <h2>Dark mode</h2>
-        <p>avoid pure black on text and surface color</p>
-        <p>surface color #121212</p>
-        <p>primary text color 87% opacicy and 60% for secondary color</p>
-        <p>vibrant color saturated -20%</p>
-    </div>
-    <div class="section">
-        <h2>Viewport - responsiveness</h2>
-        <p>first category with max-width 600px for all screens smaller than tablet</p>
-        <p>second category with min-width 768px for all screens from tablet to laptop</p>
-        <p>third category with min-width 1200px for all screens from smallest laptop and up</p>
+        <div class="section col-12">
+            <h2>Font style</h2>
+            <p>only normal</p>
+        </div>
+        <div class="section col-12">
+            <h2>Font weight</h2>
+            <p>normal or bold</p>
+        </div>
+        <div class="section col-12">
+            <h2>Font color</h2>
+            <p>primary neutral color #2c2c2c</p>
+            <p class="secondary-color">secondary neutral color #828893</p>
+        </div>
+        <div class="section col-12">
+            <h2>Font scale</h2>
+            <p>1.25 - Major third see <a class="underline" href="https://typescale.com/" target="_blank">typescale.com</a></p>
+        </div>
+        <div class="section col-12">
+            <h2>Spacing</h2>
+            <p>followed the <a class="underline" href="https://www.google.com/search?q=8+point+system" target="_blank">8 point system</a></p>
+            <p>
+                css variables <br />
+                <code>
+                    --space-1: 4px; <br />
+                    --space-2: 8px; <br />
+                    --space-3: 16px; <br />
+                    --space-4: 24px; <br />
+                    --space-5: 32px; <br />
+                    --space-6: 40px;
+                </code>
+            </p>
+            <p>for internal distances eg. label and field, we can then only use 4 point system</p>
+        </div>
+        <div class="section col-12">
+            <h2>Color ratio</h2>
+            <p>followed the <a class="underline" href="https://www.google.com/search?q=60+30+10+color+rule+design+system" target="_blank">60-30-10 color rule</a></p>
+        </div>
+        <div class="section col-12">
+            <h2>Color tints & shades</h2>
+            <p>generated from <a class="underline" href="https://maketintsandshades.com/" target="_blank">maketintsandshades.com</a></p>
+            <div style="display: flex; margin-bottom: 16px;">
+                <div style="height: 100px; width: 100px; background-color: #fae5d3;">orange-100</div>
+                <div style="height: 100px; width: 100px; background-color: #f5cba7;">orange-200</div>
+                <div style="height: 100px; width: 100px; background-color: #efb07b;">orange-300</div>
+                <div style="height: 100px; width: 100px; background-color: #ea964f;">orange-400</div>
+                <div style="height: 100px; width: 100px; background-color: #e57c23;">orange-500</div>
+                <div style="height: 100px; width: 100px; background-color: #b7631c;">orange-600</div>
+                <div style="height: 100px; width: 100px; background-color: #894a15;">orange-700</div>
+                <div style="height: 100px; width: 100px; background-color: #5c320e;">orange-800</div>
+                <div style="height: 100px; width: 100px; background-color: #2e1907;">orange-900</div>
+            </div>
+            <div style="display: flex;">
+                <div style="height: 100px; width: 100px; background-color: #d9ddff">blue-100</div>
+                <div style="height: 100px; width: 100px; background-color: #b4bbff;">blue-200</div>
+                <div style="height: 100px; width: 100px; background-color: #8e9aff;">blue-300</div>
+                <div style="height: 100px; width: 100px; background-color: #6978ff;">blue-400</div>
+                <div style="height: 100px; width: 100px; background-color: #4356FF;">blue-500</div>
+                <div style="height: 100px; width: 100px; background-color: #3645cc;">blue-600</div>
+                <div style="height: 100px; width: 100px; background-color: #283499;">blue-700</div>
+                <div style="height: 100px; width: 100px; background-color: #1b2266;">blue-800</div>
+                <div style="height: 100px; width: 100px; background-color: #0d1133;">blue-900</div>
+            </div>
+        </div>
+        <div class="section col-12">
+            <h2>Text alignment</h2>
+            <p>Use left alignment everywhere</p>
+            <p>Use center alignment for text maximun 3 lines</p>
+        </div>
+        <div class="section col-12">
+            <h2>Web accessibility</h2>
+            <p>no more than 60 characters per line for desktop and 30-40 for mobile</p>
+            <p>group related items together and give enough space to differentiate them</p>
+        </div>
+        <div class="section col-12">
+            <h2>Layout</h2>
+            <p>12 grid for desktop, 8 grid for tablet and 4 grid for mobile</p>
+            <p>maximun width 1280px</p>
+            <p>16px margin left and right</p>
+            <p>32px gutter for each grid side and 16px for mobile</p>
+            <p>grid width fluid</p>
+        </div>
+        <div class="section col-12">
+            <h2>Dark mode</h2>
+            <p>avoid pure black on text and surface color</p>
+            <p>surface color #121212</p>
+            <p>primary text color 87% opacicy and 60% for secondary color</p>
+            <p>vibrant color saturated -20%</p>
+        </div>
+        <div class="section col-12">
+            <h2>Viewport - responsiveness</h2>
+            <p>first category with max-width 600px for all screens smaller than tablet</p>
+            <p>second category with min-width 768px for all screens from tablet to laptop</p>
+            <p>third category with min-width 1200px for all screens from smallest laptop and up</p>
+        </div>
+        <div class="section col-12">
+            <h2>12 columns grid layout</h2>
+            <p>wrap every row with <code>.grid</code> class and then use accordingly <code>.col-12 .col-6 .col-4 .col-3 .col-2 .col-1</code></p>
+        </div>
+        <div class="section col-12">
+            <h2>Elevation</h2>
+            <div class="grid">
+                <div class="col-6 shadow-normal">
+                    <code>.shadow-normal</code>
+                </div>
+                <div class="col-6 shadow-small">
+                    <code>.shadow-small</code>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
