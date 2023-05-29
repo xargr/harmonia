@@ -108,6 +108,19 @@ h6 {
     font-size: var(--font-size-small);
 }
 
+.shadow-small {
+    box-shadow: var(--elevation-floating);
+}
+
+.shadow-normal {
+    box-shadow: var(--elevation-raised);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 .col-12 {
     grid-column: span 12 / span 12;
 }
