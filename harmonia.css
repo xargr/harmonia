@@ -48,6 +48,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -57,12 +59,12 @@ html {
 }
 
 body {
-    width: var(--main-width);
+    max-width: var(--main-width);
     margin: 0 auto;
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
     background: var(--main-bg);
-    padding: 0 1rem;
+    padding: 0 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,32 +119,10 @@ h6 {
 }
 
 .grid {
+    max-width: var(--main-width);
     display: grid;
+    gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-}
-
-.col-12 {
-    grid-column: span 12 / span 12;
-}
-
-.col-6 {
-    grid-column: span 6 / span 6;
-}
-
-.col-4 {
-    grid-column: span 4 / span 4;
-}
-
-.col-3 {
-    grid-column: span 3 / span 3;
-}
-
-.col-2 {
-    grid-column: span 2 / span 2;
-}
-
-.col-1 {
-    grid-column: span 1 / span 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -157,16 +137,60 @@ h6 {
 }
 
 /* Smaller devices till tablet */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 280px) {
+    :root {
+        --default-font-size: 16px;
+    }
 
+    .grid {
+        gap: 16px;
+    }
+
+    .grid {
+        gap: 16px;
+    }
+
+    .col-12 {
+        grid-column: span 12 / span 12;
+    }
+    
+    .col-6 {
+        grid-column: span 12 / span 12;
+    }
+    
+    .col-4 {
+        grid-column: span 12 / span 12;
+    }
 }
 
 /* Devices with viewport from tablet till laptop */
 @media only screen and (min-width: 768px) {
-
+    .col-12 {
+        grid-column: span 12 / span 12;
+    }
+    
+    .col-6 {
+        grid-column: span 6 / span 6;
+    }
+    
+    .col-4 {
+        grid-column: span 4 / span 4;
+    }
 }
 
 /* Devices from smaller laptop viewport and up */
 @media only screen and (min-width: 1200px) {
+    .col-12 {
+        grid-column: span 12 / span 12;
+    }
+    
+    .col-6 {
+        grid-column: span 6 / span 6;
+    }
+    
+    .col-4 {
+        grid-column: span 4 / span 4;
+    }
+}
 
 }
