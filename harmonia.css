@@ -150,6 +150,9 @@ h6 {
         --main-bg: #121212;
         --primary-text-color: rgba(255, 255, 255, 0.87);
         --secondary-text-color: rgba(255, 255, 255, 0.6);
+      
+        --elevation-raised: 0 0.5px 0 #f9f9f9;
+        --elevation-floating: none;
     }
 }
 
