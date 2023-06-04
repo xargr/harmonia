@@ -15,15 +15,15 @@
   --orange-800: #5c320e;
   --orange-900: #2e1907;
 
-  --blue-100: #4356FF;
-  --blue-200: #4356FF;
-  --blue-300: #4356FF;
-  --blue-400: #4356FF;
-  --blue-500: #4356FF; /* default secondary color */
-  --blue-600: #4356FF;
-  --blue-700: #4356FF;
-  --blue-800: #4356FF;
-  --blue-900: #4356FF;
+  --blue-100: hsl(234, 100%, 92%);
+  --blue-200: hsl(234, 100%, 85%);
+  --blue-300: hsl(234, 100%, 78%);
+  --blue-400: hsl(234, 100%, 71%);
+  --blue-500: hsl(234, 100%, 63%); /* default secondary color */
+  --blue-600: hsl(234, 59%, 50%);
+  --blue-700: hsl(234, 59%, 38%);
+  --blue-800: hsl(234, 59%, 25%);
+  --blue-900: hsl(234, 59%, 13%);
 
   --default-font-size: 18px;
   --default-line-height: 1.5;
@@ -127,6 +127,42 @@ h6 {
     margin-block-start: 1em;
 }
 
+.blue-bg-100 {
+    background-color: var(--blue-100);
+}
+
+.blue-bg-200 {
+    background-color: var(--blue-200);
+}
+
+.blue-bg-300 {
+    background-color: var(--blue-300);
+}
+
+.blue-bg-400 {
+    background-color: var(--blue-400);
+}
+
+.blue-bg-500 {
+    background-color: var(--blue-500);
+}
+
+.blue-bg-600 {
+    background-color: var(--blue-600);
+}
+
+.blue-bg-700 {
+    background-color: var(--blue-700);
+}
+
+.blue-bg-800 {
+    background-color: var(--blue-800);
+}
+
+.blue-bg-900 {
+    background-color: var(--blue-900);
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --main-bg: #121212;
@@ -135,6 +171,16 @@ h6 {
       
         --elevation-raised: 0 0.5px 0 #f9f9f9;
         --elevation-floating: none;
+
+        --blue-100: hsl(234, 80%, 92%);
+        --blue-200: hsl(234, 80%, 85%);
+        --blue-300: hsl(234, 80%, 78%);
+        --blue-400: hsl(234, 80%, 71%);
+        --blue-500: hsl(234, 80%, 63%); /* default secondary color */
+        --blue-600: hsl(234, 39%, 50%);
+        --blue-700: hsl(234, 39%, 38%);
+        --blue-800: hsl(234, 39%, 25%);
+        --blue-900: hsl(234, 39%, 13%);
     }
 }
 
