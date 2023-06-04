@@ -54,14 +54,13 @@
 
 html {
     font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
     font-family: var(--default-font);
     background: var(--main-bg);
 }
 
 body {
     margin: 0 auto;
-    font-size: var(--default-font-size);
-    line-height: var(--default-line-height);
     color: var(--primary-text-color);
     background: var(--main-bg);
     padding: 0 16px;
@@ -148,10 +147,13 @@ ul {
 }
 
 .grid {
-    max-width: var(--main-width);
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.grid > * {
+    margin-block-start: 1em;
 }
 
 @media (prefers-color-scheme: dark) {

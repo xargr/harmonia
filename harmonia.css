@@ -54,6 +54,7 @@
 
 html {
     font-size: var(--default-font-size);
+    line-height: var(--default-line-height);
     font-family: var(--default-font);
     background: var(--main-bg);
 }
@@ -61,8 +62,6 @@ html {
 body {
     max-width: var(--main-width);
     margin: 0 auto;
-    font-size: var(--default-font-size);
-    line-height: var(--default-line-height);
     background: var(--main-bg);
     padding: 0 16px;
 }
@@ -119,10 +118,13 @@ h6 {
 }
 
 .grid {
-    max-width: var(--main-width);
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.grid > * {
+    margin-block-start: 1em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -140,10 +142,6 @@ h6 {
 @media only screen and (max-width: 280px) {
     :root {
         --default-font-size: 16px;
-    }
-
-    .grid {
-        gap: 16px;
     }
 
     .grid {
@@ -193,4 +191,3 @@ h6 {
     }
 }
 
-}
