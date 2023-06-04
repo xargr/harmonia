@@ -15,14 +15,14 @@
   --orange-800: #5c320e;
   --orange-900: #2e1907;
 
-  --blue-100: hsl(234, 100%, 92%);
+  --blue-100: hsl(234, 100%, 93%);
   --blue-200: hsl(234, 100%, 85%);
   --blue-300: hsl(234, 100%, 78%);
   --blue-400: hsl(234, 100%, 71%);
   --blue-500: hsl(234, 100%, 63%); /* default secondary color */
-  --blue-600: hsl(234, 59%, 50%);
+  --blue-600: hsl(234, 60%, 51%);
   --blue-700: hsl(234, 59%, 38%);
-  --blue-800: hsl(234, 59%, 25%);
+  --blue-800: hsl(234, 58%, 25%);
   --blue-900: hsl(234, 59%, 13%);
 
   --default-font-size: 18px;
@@ -201,15 +201,14 @@ ul {
         --elevation-raised: 0 0.5px 0 #f9f9f9;
         --elevation-floating: none;
 
-
-        --blue-100: hsl(234, 80%, 92%);
+        --blue-100: hsl(234, 80%, 93%);
         --blue-200: hsl(234, 80%, 85%);
         --blue-300: hsl(234, 80%, 78%);
         --blue-400: hsl(234, 80%, 71%);
         --blue-500: hsl(234, 80%, 63%); /* default secondary color */
-        --blue-600: hsl(234, 39%, 50%);
+        --blue-600: hsl(234, 40%, 51%);
         --blue-700: hsl(234, 39%, 38%);
-        --blue-800: hsl(234, 39%, 25%);
+        --blue-800: hsl(234, 38%, 25%);
         --blue-900: hsl(234, 39%, 13%);
     }
 }
