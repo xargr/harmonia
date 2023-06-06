@@ -59,6 +59,7 @@ html {
     font-tyle: normal;
     font-family: var(--default-font);
     background: var(--main-bg);
+    colort: var(--primary-text-color);
 }
 
 body {
