@@ -25,8 +25,8 @@
   --blue-800: hsl(234, 58%, 25%);
   --blue-900: hsl(234, 59%, 13%);
 
-  --default-font-size: 18px;
-  --default-line-height: 1.5;
+  --default-font-size: 16px;
+  --default-line-height: 24px;
   --main-width: 1280px;
 
   --space-1: 4px;
@@ -60,8 +60,6 @@ html {
 }
 
 body {
-    max-width: var(--main-width);
-    margin: 0 auto;
     background: var(--main-bg);
     padding: 0 16px;
 }
@@ -118,6 +116,8 @@ h6 {
 }
 
 .grid {
+    max-width: var(--main-width);
+    margin: 0 auto;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
@@ -186,10 +186,6 @@ h6 {
 
 /* Smaller devices till tablet */
 @media only screen and (max-width: 280px) {
-    :root {
-        --default-font-size: 16px;
-    }
-
     .grid {
         gap: 16px;
     }
