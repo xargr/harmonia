@@ -25,8 +25,8 @@
   --blue-800: hsl(234, 58%, 25%);
   --blue-900: hsl(234, 59%, 13%);
 
-  --default-font-size: 18px;
-  --default-line-height: 1.5;
+  --default-font-size: 16px;
+  --default-line-height: 24px;
   --main-width: 1280px;
 
   --space-1: 4px;
@@ -56,13 +56,13 @@ html {
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
     font-family: var(--default-font);
+    font-style: normal;
+    font-weight: normal;
     background: var(--main-bg);
 }
 
 body {
-    margin: 0 auto;
     color: var(--primary-text-color);
-    background: var(--main-bg);
     padding: 0 16px;
 }
 
@@ -147,6 +147,8 @@ ul {
 }
 
 .grid {
+    max-width: var(--main-width);
+    margin: 0 auto;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
