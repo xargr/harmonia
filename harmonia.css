@@ -55,12 +55,16 @@
 html {
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
+    font-weight: normal;
+    font-tyle: normal;
     font-family: var(--default-font);
     background: var(--main-bg);
+    colort: var(--primary-text-color);
 }
 
 body {
-    background: var(--main-bg);
+    max-width: var(--main-width);
+    margin: 0 auto;
     padding: 0 16px;
 }
 
@@ -116,8 +120,6 @@ h6 {
 }
 
 .grid {
-    max-width: var(--main-width);
-    margin: 0 auto;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);

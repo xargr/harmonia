@@ -52,17 +52,20 @@
     padding: 0;
 }
 
+
 html {
     font-size: var(--default-font-size);
     line-height: var(--default-line-height);
-    font-family: var(--default-font);
-    font-style: normal;
     font-weight: normal;
+    font-tyle: normal;
+    font-family: var(--default-font);
     background: var(--main-bg);
+    color: var(--primary-text-color);
 }
 
 body {
-    color: var(--primary-text-color);
+    max-width: var(--main-width);
+    margin: 0 auto;
     padding: 0 16px;
 }
 
