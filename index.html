@@ -18,24 +18,26 @@
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
         </div>
         <div class="section col-12">
             <h2>Font families</h2>
             <p>Font family Poppins ( used only in headings or CTA )</p>
             <code>
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); <br /><br />
+                @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); <br /><br />
                 font-family: 'Poppins', sans-serif;
+            </code><br />
+            or<br />
+            <code>
+                @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap'); <br /><br />
+                font-family: 'Sora', sans-serif;
             </code>
             <p>Font family Tahoma ( it's web safe - used everywhere as a default font family and required in text heavy areas )</p>
         </div>
         <div class="section col-12">
             <h2>Font size</h2>
             <p>primary font size 16px</p>
-            <p class="text-medium">medium font size 0.8rem</p>
-            <p class="text-small">small font size 0.64rem</p>
+            <p class="text-medium">medium font size 14px</p>
+            <p class="text-small">small font size 12px</p>
             <p>on mobile minumun 16px</p>
         </div>
         <div class="section col-12">
@@ -76,32 +78,6 @@
             <p>followed the <a class="underline" href="https://www.google.com/search?q=60+30+10+color+rule+design+system" target="_blank">60-30-10 color rule</a></p>
         </div>
         <div class="section col-12">
-            <h2>Color tints & shades</h2>
-            <p>generated from <a class="underline" href="https://maketintsandshades.com/" target="_blank">maketintsandshades.com</a></p>
-            <div style="display: flex; margin-bottom: 16px;">
-                <div style="height: 100px; width: 100px; background-color: #fae5d3;">orange-100</div>
-                <div style="height: 100px; width: 100px; background-color: #f5cba7;">orange-200</div>
-                <div style="height: 100px; width: 100px; background-color: #efb07b;">orange-300</div>
-                <div style="height: 100px; width: 100px; background-color: #ea964f;">orange-400</div>
-                <div style="height: 100px; width: 100px; background-color: #e57c23;">orange-500</div>
-                <div style="height: 100px; width: 100px; background-color: #b7631c;">orange-600</div>
-                <div style="height: 100px; width: 100px; background-color: #894a15;">orange-700</div>
-                <div style="height: 100px; width: 100px; background-color: #5c320e;">orange-800</div>
-                <div style="height: 100px; width: 100px; background-color: #2e1907;">orange-900</div>
-            </div>
-            <div style="display: flex;">
-                <div style="height: 100px; width: 100px;" class="blue-bg-100">blue-100</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-200">blue-200</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-300">blue-300</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-400">blue-400</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-500">blue-500</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-600">blue-600</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-700">blue-700</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-800">blue-800</div>
-                <div style="height: 100px; width: 100px;" class="blue-bg-900">blue-900</div>
-            </div>
-        </div>
-        <div class="section col-12">
             <h2>Text alignment</h2>
             <p>Use left alignment everywhere</p>
             <p>Use center alignment for text maximun 3 lines</p>
@@ -114,10 +90,9 @@
         <div class="section col-12">
             <h2>Layout</h2>
             <p>12 grid for desktop, 8 grid for tablet and 4 grid for mobile</p>
-            <p>maximun width 1280px</p>
+            <p>maximun width 1200px</p>
             <p>16px margin left and right</p>
             <p>32px gutter for each grid side and 16px for mobile</p>
-            <p>grid width fluid</p>
         </div>
         <div class="section col-12">
             <h2>Dark mode</h2>
@@ -128,34 +103,34 @@
         </div>
         <div class="section col-12">
             <h2>Viewport - responsiveness</h2>
-            <p>first category with max-width 600px for all screens smaller than tablet</p>
-            <p>second category with min-width 768px for all screens from tablet to laptop</p>
-            <p>third category with min-width 1200px for all screens from smallest laptop and up</p>
+            <p>mobile first approach</p>
+            <p>768px and up for tablets and bigger screens</p>
+            <p>1200px and up for large screens</p>
         </div>
         <div class="section col-12">
             <h2>12 columns grid layout</h2>
             <p>wrap every row with <code>.grid</code> class and then use accordingly <code>.col-12 .col-6 .col-4</code></p>
             <div class="grid">
-                <div class="col-12">
+                <div class="col-12" style="background: red;">
                     col-12
                 </div>
             </div>
             <div class="grid">
-                <div class="col-6">
+                <div class="col-6" style="background: yellow;">
                     col-6
                 </div>
-                <div class="col-6">
+                <div class="col-6" style="background: yellow;">
                     col-6
                 </div>
             </div>
             <div class="grid">
-                <div class="col-4">
+                <div class="col-4" style="background: blue;">
                     col-4
                 </div>
-                <div class="col-4">
+                <div class="col-4" style="background: blue;">
                     col-4
                 </div>
-                <div class="col-4">
+                <div class="col-4" style="background: blue;">
                     col-4
                 </div>
             </div>
