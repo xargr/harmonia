@@ -13,18 +13,14 @@ Heading 2
 
 ### Heading 3
 
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
 Font families
 -------------
 
 Font family Poppins ( used only in headings or CTA )
 
-`@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');      font-family: 'Poppins', sans-serif;`
+`@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');      font-family: 'Poppins', sans-serif;`  
+or  
+`@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');      font-family: 'Sora', sans-serif;`
 
 Font family Tahoma ( it's web safe - used everywhere as a default font family and required in text heavy areas )
 
@@ -33,9 +29,11 @@ Font size
 
 primary font size 16px
 
-medium font size 0.833rem
+medium font size 14px
 
-small font size 0.694rem
+small font size 12px
+
+on mobile minumun 16px
 
 Font style
 ----------
@@ -74,47 +72,6 @@ Color ratio
 
 followed the [60-30-10 color rule](https://www.google.com/search?q=60+30+10+color+rule+design+system)
 
-Color tints & shades
---------------------
-
-generated from [maketintsandshades.com](https://maketintsandshades.com/)
-
-orange-100
-
-orange-200
-
-orange-300
-
-orange-400
-
-orange-500
-
-orange-600
-
-orange-700
-
-orange-800
-
-orange-900
-
-blue-100
-
-blue-200
-
-blue-300
-
-blue-400
-
-blue-500
-
-blue-600
-
-blue-700
-
-blue-800
-
-blue-900
-
 Text alignment
 --------------
 
@@ -132,8 +89,54 @@ group related items together and give enough space to differentiate them
 Layout
 ------
 
-12 grid for desktop and 4 grid for mobile
+12 grid for desktop, 8 grid for tablet and 4 grid for mobile
 
 maximun width 1200px
 
-16px gutter for each grid side and 8 for mobile
+16px margin left and right
+
+32px gutter for each grid side and 16px for mobile
+
+Dark mode
+---------
+
+avoid pure black on text and surface color
+
+surface color #121212
+
+primary text color 87% opacicy and 60% for secondary color
+
+vibrant color saturated -20%
+
+Viewport - responsiveness
+-------------------------
+
+mobile first approach
+
+768px and up for tablets and bigger screens
+
+1200px and up for large screens
+
+12 columns grid layout
+----------------------
+
+wrap every row with `.grid` class and then use accordingly `.col-12 .col-6 .col-4`
+
+col-12
+
+col-6
+
+col-6
+
+col-4
+
+col-4
+
+col-4
+
+Elevation
+---------
+
+`.shadow-normal`
+
+`.shadow-small`
